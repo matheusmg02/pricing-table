@@ -12,12 +12,14 @@
 }
 
 body {
+    background-color: var(--page-background);
     font-family: 'Open Sans';
 }
 
 .intro-content-bg {
     background-color: var(--blue);
     padding: 100px;
+    box-shadow: 0 150px var(--blue);
 }
 
 .intro-content {
@@ -34,4 +36,83 @@ body {
 
 .intro-content p {
     font-size: 1.125rem;
+}
+
+.pricing-table-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.pricing-table-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px;
+    max-width: 355px;
+    height: 470px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.pricing-table-content h2 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.price-content {
+    font-size: 1.125rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.int-number {
+    font-size: 2.5rem;
+}
+
+.per-month {
+    font-weight: 400;
+    color: var(--gray);
+    margin-left: 5px;
+}
+
+.plan-description {
+    font-size: 0.875rem;
+    color: var(--gray);
+    padding-bottom: 20px;
+    border-bottom: solid 1px #eee;
+    margin-bottom: 20px;
+}
+
+.plan-rights {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.plan-right-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.plan-right-container {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--gray);
+}
+
+.btn-assign {
+    font-size: 1.125rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--blue);
+    background-color: #fff;
+    border: solid 1px var(--blue);
+    border-radius: 10px;
+    padding: 12px;
+    cursor: pointer;
 }
