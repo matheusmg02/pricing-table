@@ -14,6 +14,7 @@
 body {
     background-color: var(--page-background);
     font-family: 'Open Sans';
+    padding-bottom: 2000px;
 }
 
 .intro-content-bg {
@@ -49,12 +50,16 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 30px;
     max-width: 355px;
     height: 470px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.08);
     border-radius: 8px;
     background-color: #fff;
+    overflow: hidden;
+}
+
+.pricing-table-content {
+    padding: 30px;
 }
 
 .pricing-table-content h2 {
@@ -115,4 +120,20 @@ body {
     border-radius: 10px;
     padding: 12px;
     cursor: pointer;
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--yellow);
+    padding: 25px 30px;
+}
+
+.big-card {
+    height: 490px;
+}
+
+.neg-mt {
+    margin-top: -100px;
 }
